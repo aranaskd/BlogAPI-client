@@ -4,7 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Container, Card, Button, Modal, Form, Spinner } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 
-const base_url = "http://localhost:4000";
+const base_url = "https://blogapi-aranas.onrender.com";
 
 export default function PostDetails() {
     const { user } = useContext(UserContext);
@@ -139,7 +139,7 @@ export default function PostDetails() {
                                     <li key={index} className="border-bottom py-2">
                                         <div className="d-flex justify-content-between">
                                             <div>
-                                                <strong>{comment._id}:</strong> {comment.comment}
+                                                <strong>{comment.username}:</strong> {comment.comment}
                                             </div>
                                         </div>
                         
